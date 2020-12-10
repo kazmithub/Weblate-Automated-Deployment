@@ -100,7 +100,7 @@ resource "aws_ecs_task_definition" "weblate" {
       },
       {
         "name": "WEBLATE_ADMIN_PASSWORD",
-        "value": "spaceOS123"
+        "value": "test123"
       },
       {
         "name": "WEBLATE_ALLOWED_HOSTS",
@@ -116,11 +116,11 @@ resource "aws_ecs_task_definition" "weblate" {
       },
       {
         "name": "WEBLATE_EMAIL_HOST_PASSWORD",
-        "value": "test@123"
+        "value": "task@1235"
       },
       {
         "name": "WEBLATE_EMAIL_HOST_USER",
-        "value": "ahsan"
+        "value": "nashra"
       },
       {
         "name": "WEBLATE_SERVER_EMAIL",

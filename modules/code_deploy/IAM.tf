@@ -1,4 +1,4 @@
-resource "aws_iam_role" "code_deploy" {
+resource "aws_iam_role" "code_deployk" {
   name               = "${var.name}-${var.environment}-codedeploy-role"
   assume_role_policy = "${data.aws_iam_policy_document.code_deploy_policy.json}"
   path               = "/"
@@ -102,8 +102,6 @@ data "aws_iam_policy_document" "codedeploy_policy_doc" {
     resources = ["*"]
   }
 }
-
-# https://www.terraform.io/docs/providers/aws/r/iam_role_policy_attachment.html
 resource "aws_iam_role_policy_attachment" "codedeploy_attachment" {
   role       = "${aws_iam_role.code_deploy.name}"
   policy_arn = "${aws_iam_policy.codedeploy_policy.arn}"
