@@ -24,3 +24,4 @@ To deploy this setup on your AWS environment.
 6. Create a new workspace with a unique name/ or use:																`terraform workspace new dev`
 7. Apply using the given configuration.																				`terraform apply --var-file=.\parameters-dev.tfvars` and type *yes* when prompted.
 
+
