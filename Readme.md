@@ -25,3 +25,4 @@ To deploy this setup on your AWS environment.
 7. Apply using the given configuration.																				`terraform apply --var-file=.\parameters-dev.tfvars` and type *yes* when prompted.
 
 
+
